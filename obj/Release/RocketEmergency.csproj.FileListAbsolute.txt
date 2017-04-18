@@ -1,0 +1,10 @@
+\\alpha\NightFish\Home\Code\Projects\911\911\bin\Release\Emergency.dll
+\\alpha\NightFish\Home\Code\Projects\911\911\bin\Release\Emergency.pdb
+\\alpha\NightFish\Home\Code\Projects\911\911\bin\Release\Assembly-CSharp-firstpass.dll
+\\alpha\NightFish\Home\Code\Projects\911\911\bin\Release\Assembly-CSharp.dll
+\\alpha\NightFish\Home\Code\Projects\911\911\bin\Release\Rocket.API.dll
+\\alpha\NightFish\Home\Code\Projects\911\911\bin\Release\Rocket.Core.dll
+\\alpha\NightFish\Home\Code\Projects\911\911\bin\Release\Rocket.Unturned.dll
+\\alpha\NightFish\Home\Code\Projects\911\911\bin\Release\UnityEngine.dll
+\\alpha\NightFish\Home\Code\Projects\911\911\obj\Release\Emergency.dll
+\\alpha\NightFish\Home\Code\Projects\911\911\obj\Release\Emergency.pdb
