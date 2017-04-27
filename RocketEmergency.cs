@@ -85,7 +85,7 @@ namespace NightFish.Emergency
             string x = Math.Round(player.Position.x).ToString();
             string y = Math.Round(player.Position.y).ToString();
             string z = Math.Round(player.Position.z).ToString();
-            UnturnedChat.Say(player, DefaultTranslations.Translate("pos", x, y, z), Color.cyan);
+            UnturnedChat.Say(player, Translate("pos", x, y, z), Color.cyan);
         }
 
         [RocketCommandPermission("emergency.mute")]
@@ -97,12 +97,12 @@ namespace NightFish.Emergency
             if (silent.Contains(player.CSteamID))
             {
                 silent.Remove(player.CSteamID);
-                UnturnedChat.Say(player, DefaultTranslations.Translate("unmute"), Color.yellow);
+                UnturnedChat.Say(player, Translate("unmute"), Color.yellow);
             }
             else
             {
                 silent.Add(player.CSteamID);
-                UnturnedChat.Say(player, DefaultTranslations.Translate("mute"), Color.yellow);
+                UnturnedChat.Say(player, Translate("mute"), Color.yellow);
             }
         }
 
@@ -120,7 +120,7 @@ namespace NightFish.Emergency
             UnturnedPlayer toRescue = UnturnedPlayer.FromName(string.Join(" ", parameters));
             if(toRescue == null)
             {
-                UnturnedChat.Say(caller, DefaultTranslations.Translate("noplayer"), Color.yellow);
+                UnturnedChat.Say(caller, Translate("noplayer"), Color.yellow);
                 return;
             } 
 
@@ -132,13 +132,13 @@ namespace NightFish.Emergency
                     UnturnedPlayer tmpPlayer = UnturnedPlayer.FromSteamPlayer(sp);
                     if ((tmpPlayer.HasPermission("emergency.receive") && !silent.Contains(tmpPlayer.CSteamID)) || tmpPlayer.CSteamID == player.CSteamID || tmpPlayer.CSteamID == toRescue.CSteamID)
                     {
-                        UnturnedChat.Say(tmpPlayer, DefaultTranslations.Translate("respond", player.CharacterName, toRescue.CharacterName), Color.cyan);
+                        UnturnedChat.Say(tmpPlayer, Translate("respond", player.CharacterName, toRescue.CharacterName), Color.cyan);
                     }
                 }
             }
             else
             {
-                UnturnedChat.Say(caller, DefaultTranslations.Translate("noemergency", toRescue.CharacterName), Color.yellow);
+                UnturnedChat.Say(caller, Translate("noemergency", toRescue.CharacterName), Color.yellow);
             }
         }
 
@@ -167,11 +167,11 @@ namespace NightFish.Emergency
                         string x = Math.Round(player.Position.x).ToString();
                         string y = Math.Round(player.Position.y).ToString();
                         string z = Math.Round(player.Position.z).ToString();
-                        UnturnedChat.Say(tmpPlayer, DefaultTranslations.Translate("emergencycoords", player.CharacterName, msg, x, y, z), Color.red);
+                        UnturnedChat.Say(tmpPlayer, Translate("emergencycoords", player.CharacterName, msg, x, y, z), Color.red);
                     }
                     else
                     {
-                        UnturnedChat.Say(tmpPlayer, DefaultTranslations.Translate("emergency", player.CharacterName, msg), Color.red);
+                        UnturnedChat.Say(tmpPlayer, Translate("emergency", player.CharacterName, msg), Color.red);
                     }
                 }
             }

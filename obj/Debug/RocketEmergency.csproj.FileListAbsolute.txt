@@ -9,3 +9,14 @@
 \\alpha\NightFish\Home\Code\Projects\911\911\bin\Debug\Rocket.Core.dll
 \\alpha\NightFish\Home\Code\Projects\911\911\bin\Debug\Rocket.Unturned.dll
 \\alpha\NightFish\Home\Code\Projects\911\911\bin\Debug\UnityEngine.dll
+D:\Users\nightfish\Documents\GitHub\Rocket911\bin\Debug\Emergency.dll
+D:\Users\nightfish\Documents\GitHub\Rocket911\bin\Debug\Emergency.pdb
+D:\Users\nightfish\Documents\GitHub\Rocket911\bin\Debug\Assembly-CSharp-firstpass.dll
+D:\Users\nightfish\Documents\GitHub\Rocket911\bin\Debug\Assembly-CSharp.dll
+D:\Users\nightfish\Documents\GitHub\Rocket911\bin\Debug\Rocket.API.dll
+D:\Users\nightfish\Documents\GitHub\Rocket911\bin\Debug\Rocket.Core.dll
+D:\Users\nightfish\Documents\GitHub\Rocket911\bin\Debug\Rocket.Unturned.dll
+D:\Users\nightfish\Documents\GitHub\Rocket911\bin\Debug\UnityEngine.dll
+D:\Users\nightfish\Documents\GitHub\Rocket911\obj\Debug\RocketEmergency.csprojResolveAssemblyReference.cache
+D:\Users\nightfish\Documents\GitHub\Rocket911\obj\Debug\Emergency.dll
+D:\Users\nightfish\Documents\GitHub\Rocket911\obj\Debug\Emergency.pdb
