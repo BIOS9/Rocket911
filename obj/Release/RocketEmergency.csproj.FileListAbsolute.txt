@@ -8,3 +8,9 @@
 \\alpha\NightFish\Home\Code\Projects\911\911\bin\Release\UnityEngine.dll
 \\alpha\NightFish\Home\Code\Projects\911\911\obj\Release\Emergency.dll
 \\alpha\NightFish\Home\Code\Projects\911\911\obj\Release\Emergency.pdb
+C:\Users\irfan\Documents\GitHub\Rocket911\bin\Release\Emergency.dll
+C:\Users\irfan\Documents\GitHub\Rocket911\bin\Release\Emergency.pdb
+C:\Users\irfan\Documents\GitHub\Rocket911\obj\Release\RocketEmergency.csprojAssemblyReference.cache
+C:\Users\irfan\Documents\GitHub\Rocket911\obj\Release\RocketEmergency.csproj.CoreCompileInputs.cache
+C:\Users\irfan\Documents\GitHub\Rocket911\obj\Release\Emergency.dll
+C:\Users\irfan\Documents\GitHub\Rocket911\obj\Release\Emergency.pdb
