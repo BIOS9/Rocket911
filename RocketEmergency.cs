@@ -14,14 +14,15 @@ using Rocket.Unturned.Chat;
 using UnityEngine;
 using Steamworks;
 using Rocket.Unturned;
+using Math = System.Math;
 
 namespace NightFish.Emergency
 {
     public class Emergency : RocketPlugin<RocketEmergencyConfiguration>
     {
-        List<CSteamID> silent = new List<CSteamID>();
-        Dictionary<CSteamID, DateTime> emergencies = new Dictionary<CSteamID, DateTime>();
-        DateTime lastCheck = DateTime.Now;
+        private readonly List<CSteamID> silent = new List<CSteamID>();
+        private readonly Dictionary<CSteamID, DateTime> emergencies = new Dictionary<CSteamID, DateTime>();
+        private readonly DateTime lastCheck = DateTime.Now;
 
         protected override void Load()
         {
@@ -79,7 +80,7 @@ namespace NightFish.Emergency
 
         [RocketCommandAlias("pos")]
         [RocketCommand("position", "Returns current location in co-ordinates", "/pos", AllowedCaller.Player)]
-        public void ExecuteCommandPos(IRocketPlayer caller, string[] parameters)
+        public void ExecuteCommandPos(IRocketPlayer caller, string[] _)
         {
             UnturnedPlayer player = (UnturnedPlayer)caller;
             string x = Math.Round(player.Position.x).ToString();
@@ -91,7 +92,7 @@ namespace NightFish.Emergency
         [RocketCommandPermission("emergency.mute")]
         [RocketCommandAlias("unmute")]
         [RocketCommand("mute", "Mutes/Unmutes the receiving of 911 messages.", "/mute", AllowedCaller.Player)]
-        public void ExecuteCommandMute(IRocketPlayer caller, string[] parameters)
+        public void ExecuteCommandMute(IRocketPlayer caller, string[] _)
         {
             UnturnedPlayer player = (UnturnedPlayer)caller;
             if (silent.Contains(player.CSteamID))
